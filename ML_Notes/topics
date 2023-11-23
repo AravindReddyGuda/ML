@@ -1,0 +1,113 @@
+# 1. Standard Deviation
+# Explanation: A measure of the amount of variation or dispersion in a set of values.
+# Formula: sigma = sqrt(sum((xi - mu)^2) / N)
+# Python Module:
+import numpy as np
+data = np.array([1, 2, 3, 4, 5])
+std_dev = np.std(data)
+
+# 2. Percentile
+# Explanation: The nth percentile is the value below which n% of the data falls.
+# Formula: Pn = n(N + 1) / 100
+# Python Module:
+percentile_50 = np.percentile(data, 50)
+
+# 3. Data Distribution
+# Explanation: The way values are spread across a dataset.
+# Python Module: Visualization using matplotlib or seaborn.
+
+# 4. Normal Data Distribution
+# Explanation: A symmetric, bell-shaped distribution (normal distribution).
+# Python Module: Visualization using matplotlib or seaborn.
+
+# 5. Scatter Plot
+# Explanation: A 2D plot showing the relationship between two variables.
+# Python Module:
+import matplotlib.pyplot as plt
+plt.scatter(x_data, y_data)
+plt.show()
+
+# 6. Linear Regression
+# Explanation: A method to model the relationship between a dependent variable and one or more independent variables.
+# Formula: y = mx + b
+# Python Module:
+from sklearn.linear_model import LinearRegression
+model = LinearRegression()
+
+# 7. Polynomial Regression
+# Explanation: Extending linear regression by considering polynomial relationships.
+# Formula: y = an*x^n + an-1*x^(n-1) + ... + a1*x + a0
+# Python Module:
+from sklearn.preprocessing import PolynomialFeatures
+
+# 8. Multiple Regression
+# Explanation: Extending linear regression to multiple independent variables.
+# Formula: y = b0 + b1*x1 + b2*x2 + ... + bn*xn
+# Python Module:
+from sklearn.linear_model import LinearRegression
+
+# 9. Scale
+# Explanation: Transforming data to a standard scale (e.g., Z-score normalization).
+# Python Module:
+from sklearn.preprocessing import StandardScaler
+
+# 10. Train/Test
+# Explanation: Splitting the dataset into training and testing subsets.
+# Python Module:
+from sklearn.model_selection import train_test_split
+
+# 11. Decision Tree
+# Explanation: A tree-like model of decisions to make predictions.
+# Python Module:
+from sklearn.tree import DecisionTreeClassifier
+
+# 12. Confusion Matrix
+# Explanation: A table used to evaluate the performance of a classification algorithm.
+# Python Module:
+from sklearn.metrics import confusion_matrix
+
+# 13. Hierarchical Clustering
+# Explanation: A method of cluster analysis that builds a hierarchy of clusters.
+# Python Module:
+from scipy.cluster.hierarchy import linkage, dendrogram
+
+# 14. Logistic Regression
+# Explanation: A regression model where the dependent variable is categorical.
+# Formula: P(Y=1) = 1 / (1 + e^-(b0 + b1*x))
+# Python Module:
+from sklearn.linear_model import LogisticRegression
+
+# 15. Grid Search
+# Explanation: A method to tune hyperparameters in a model.
+# Python Module:
+from sklearn.model_selection import GridSearchCV
+
+# 16. Categorical Data
+# Explanation: Data that can be divided into categories but has no inherent order.
+# Python Module:
+from sklearn.preprocessing import LabelEncoder, OneHotEncoder
+
+# 17. K-means
+# Explanation: A type of clustering algorithm that partitions data into k clusters.
+# Python Module:
+from sklearn.cluster import KMeans
+
+# 18. Bootstrap Aggregation (Bagging)
+# Explanation: A method to improve the stability and accuracy of machine learning algorithms.
+# Python Module:
+from sklearn.ensemble import BaggingClassifier
+
+# 19. Cross Validation
+# Explanation: A resampling procedure to evaluate machine learning models on a limited data sample.
+# Python Module:
+from sklearn.model_selection import cross_val_score
+
+# 20. AUC - ROC Curve
+# Explanation: Receiver Operating Characteristic (ROC) curve to evaluate classification model performance.
+# Python Module:
+from sklearn.metrics import roc_curve, auc
+
+# 21. K-nearest neighbors (KNN)
+# Explanation: A type of instance-based learning where the prediction is based on the majority class among the k-nearest neighbors.
+# Python Module:
+from sklearn.neighbors import KNeighborsClassifier
